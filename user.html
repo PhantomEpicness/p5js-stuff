@@ -13,10 +13,16 @@
     var posY = h/2;
         var posX1 = w/2;
     var posY1 = h/2;
-    var low -100;
-    var high 100;
+    var low -10;
+    var high 10;
     function setup(){
       createCanvas(w,h);
+    }
+    function faster(){
+      high += 10;
+    }
+    function slower(){
+      low +-= 10;
     }
     function draw(){
       strokeWeight(0.5);
